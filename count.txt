@@ -1,0 +1,3 @@
+(venv) > less count.txt
+0
+count.txt (END)
