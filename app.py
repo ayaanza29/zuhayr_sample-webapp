@@ -1,5 +1,5 @@
 from flask import Flask, render_template
-
+import datetime
 app = Flask(__name__)
 
 @app.route("/")
@@ -17,8 +17,16 @@ def index():
     f.write(str(count))
     f.close()
 
+
+    current_date = datetime.datetime.now()
+    g = open("current_date.txt", "w")
+    g.write(str(current_date))
+    g.close()
+
     # Render HTML with count variable
-    return render_template("index.html", count=count)
+    return render_template("index.html", count=count, current_date=current_date)
+
+
 
 if __name__ == "__main__":
     app.run()
