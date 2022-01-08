@@ -26,7 +26,9 @@ def index():
     # Render HTML with count variable
     return render_template("index.html", count=count, current_date=current_date)
 
-
+#pytho -m venv venv
+#venv\Scripts\activate
+#localhost:5000
 
 if __name__ == "__main__":
     app.run()
