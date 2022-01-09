@@ -26,6 +26,22 @@ def index():
     # Render HTML with count variable
     return render_template("index.html", count=count, current_date=current_date)
 
+@app.route('/index.html')
+def index():
+    return render_template('index.html')
+
+@app.route('/pca.html')
+def index():
+    return render_template('pca.html')
+
+@app.route('/settings.html')
+def index():
+    return render_template('settings.html')
+
+@app.route('/upload.html')
+def index():
+    return render_template('upload.html')
+
 #pytho -m venv venv
 #venv\Scripts\activate
 #localhost:5000
