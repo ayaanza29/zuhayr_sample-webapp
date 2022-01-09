@@ -26,6 +26,10 @@ def index():
     # Render HTML with count variable
     return render_template("index.html", count=count, current_date=current_date)
 
+@app.route('/index.html')
+def returningToIndex():
+    return render_template('index.html')
+
 @app.route('/pca.html')
 def pca():
     return render_template('pca.html')
