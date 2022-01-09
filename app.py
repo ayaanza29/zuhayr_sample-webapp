@@ -79,7 +79,7 @@ def upload_file():
             return redirect(request.url)
         if file and allowed_file(file.filename):
             filename = secure_filename(file.filename)
-            file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
+            file.save(os.path.join("C:/Users/rkhan/Desktop/Z Research Programming", filename))
             return redirect(url_for('download_file', name=filename))
     return '''
     <!doctype html>
