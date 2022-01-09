@@ -1,8 +1,8 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 import datetime
 from werkzeug.utils import secure_filename
 app = Flask(__name__)
-app.config["C:\\Users\\rkhan\\Desktop\\Z Research Programming"]
+app.config.from_pyfile("config.py")
 
 @app.route("/")
 def index():
