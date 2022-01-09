@@ -1,6 +1,6 @@
 from flask import Flask, render_template
 import datetime
-from werkzeug import secure_filename
+from werkzeug.utils import secure_filename
 app = Flask(__name__)
 app.config["C:\\Users\\rkhan\\Desktop\\Z Research Programming"]
 
