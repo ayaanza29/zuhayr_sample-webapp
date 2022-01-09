@@ -27,15 +27,15 @@ def index():
     return render_template("index.html", count=count, current_date=current_date)
 
 @app.route('/pca.html')
-def index():
+def pca():
     return render_template('pca.html')
 
 @app.route('/settings.html')
-def index():
+def settings():
     return render_template('settings.html')
 
 @app.route('/upload.html')
-def index():
+def upload():
     return render_template('upload.html')
 
 #pytho -m venv venv
