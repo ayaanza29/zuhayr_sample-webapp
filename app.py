@@ -4,7 +4,7 @@ import os
 from werkzeug.utils import secure_filename
 
 UPLOAD_FOLDER = "C:/Users/rkhan/Desktop/Z Research Programming"
-ALLOWED_EXTENSIONS = {'txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif'}
+ALLOWED_EXTENSIONS = {'txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif', 'fcs'}
 
 app = Flask(__name__)
 app.config["Upload_Folder"] = UPLOAD_FOLDER
