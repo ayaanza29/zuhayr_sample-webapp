@@ -81,7 +81,11 @@ def upload_file():
             filename = secure_filename(file.filename)
             file.save(os.path.join("C:/Users/rkhan/Desktop/Z Research Programming", filename))
             return redirect(url_for('upload_file', name=filename))
-    return '''
+    return render_template("uploadFormat.html")
+    
+    
+    
+    '''
     <!doctype html>
     <title>Upload new File</title>
     <h1>Upload new File</h1>
