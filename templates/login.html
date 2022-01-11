@@ -4,6 +4,7 @@
 <style>
     * {
         font-family: "Rubik", "sans-serif";
+
     }
     div {
         text-align: left;
@@ -40,12 +41,25 @@
     li a:hover {
         background-color: #111;
     }
+    body{
+        --color-primary: #009579;
+        --color-primary-dark: #007f67;
+        --color-secondary: #252c6a;
+        --color-error: #cc3333;
+        --color-success: #4bb544;
+        --border-radius: 4px;
+
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        font-size: 18px;
+        /*background: var(--color-primary);*/
+        background: url(./UMAP.jpg);
+        background-size: cover;
+    }
 </style>
-
-
-<div>
-    <h1>University of Pennsylvania Medical Center</h1><br>
-</div>
 
 
 <div>
@@ -56,6 +70,17 @@
             <input type="text" class="form_input" autofocus placeholder="Email">
             <div class="form_input-error-message">This is an error message</div>
         </div>
+        <div class="form_input-group">
+            <input type="password" class="form_input" autofocus placeholder="Password">
+            <div class="form_input-error-message"></div>
+        </div>
+        <button class="form_button" type="submit">Continue</button>
+        <p class ="form_text">
+            <a href="#" class="form_link">Forgot Password?</a>  <!-- Still needs to be changed so it actually links somewhere-->
+        </p>
+        <p class ="form_text">
+            <a class="form_link" href="./" id="linkCreateAccount" class="form_link">Create Account</a>  <!-- Still needs to be changed so it actually links somewhere-->
+        </p>
     </form>
 </div>
 
