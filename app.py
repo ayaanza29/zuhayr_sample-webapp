@@ -37,6 +37,10 @@ def index():
 def returningToIndex():
     return render_template('index.html')
 
+@app.route('/login.html')
+def returningToIndex():
+    return render_template('login.html')
+
 @app.route('/pca.html')
 def pca():
     return render_template('pca.html')
