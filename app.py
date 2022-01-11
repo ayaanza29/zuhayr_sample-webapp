@@ -38,7 +38,7 @@ def returningToIndex():
     return render_template('index.html')
 
 @app.route('/login.html')
-def returningToIndex():
+def login():
     return render_template('login.html')
 
 @app.route('/pca.html')
