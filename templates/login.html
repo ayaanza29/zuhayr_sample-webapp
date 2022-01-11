@@ -40,7 +40,7 @@
     }
 
     body{
-        --color-primary: #b3b2ee;
+        --color-primary: #03ac8d;
         --color-primary-dark: #007f67;
         --color-secondary: #252c6a;
         --color-error: #cc3333;
@@ -70,6 +70,10 @@
     .container,
     .form_input,
     .form_button,
+
+    .form-hidden {
+        display: none;
+    }
 
     .form > *:first-child {
         margin-top: 0;
@@ -168,7 +172,7 @@
 
 
 <div>
-    <form class ="form" id ="login">
+    <form class ="form form--hidden" id ="login">
         <h1 class="form_title">Login</h1>
         <div class="form_message form_message-error"></div>
         <div class="form_input-group">
@@ -185,6 +189,26 @@
         </p>
         <p class ="form_text">
             <a class="form_link" href="./" id="linkCreateAccount" class="form_link">Create Account</a>  <!-- Still needs to be changed so it actually links somewhere-->
+        </p>
+    </form>
+    <form class ="form form" id ="createAccount">
+        <h1 class="form_title">Login</h1>
+        <div class="form_message form_message-error"></div>
+        <div class="form_input-group">
+            <input type="text" class="form_input" autofocus placeholder="Email">
+            <div class="form_input-error-message"></div>
+        </div>
+        <div class="form_input-group">
+            <input type="password" class="form_input" autofocus placeholder="Password">
+            <div class="form_input-error-message"></div>
+        </div>
+        <div class="form_input-group">
+            <input type="password" class="form_input" autofocus placeholder="Confirm Password">
+            <div class="form_input-error-message"></div>
+        </div>
+        <button class="form_button" type="submit">Continue</button>
+        <p class ="form_text">
+            <a class="form_link" href="./" id="linkCreateAccount" class="linkLogin">Already have account? Sign in</a>  <!-- Still needs to be changed so it actually links somewhere-->
         </p>
     </form>
 </div>
