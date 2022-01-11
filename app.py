@@ -7,7 +7,7 @@ from werkzeug.utils import secure_filename
 UPLOAD_FOLDER = "C:/Users/rkhan/Desktop/Z Research Programming"
 ALLOWED_EXTENSIONS = {'txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif', 'fcs'}
 
-app = Flask(__name__)
+app = Flask(__name__, static_url_path='/static')
 app.config["Upload_Folder"] = UPLOAD_FOLDER
 
 @app.route("/")
