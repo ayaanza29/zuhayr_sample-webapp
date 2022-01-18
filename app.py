@@ -104,7 +104,7 @@ def upload_file():
 
 #pytho -m venv venv
 #venv\Scripts\activate
-#localhost:5000
+#localhost:5000  Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Unrestricted
 
 if __name__ == "__main__":
     app.run(debug = True)
